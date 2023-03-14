@@ -33,8 +33,8 @@ export const DivButtons = styled.div`
     height: 25px;
     font-size: 24px;
     font-family: "Roboto", sans-serif;
-    color: white;
-    border-left: 1px solid transparent;
+    color: #fff;
+    border-left: 2px solid transparent;
     padding: 0 2px;
   }
 
@@ -55,15 +55,28 @@ export const DivSearch = styled.div`
     background-color: ${(props) => props.theme["--dark-bg"]};
     border: none;
     border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    padding: 0 12px;
+
     ::placeholder {
       color: #fff;
-      font-size: 14px;
+      font-size: 18px;
     }
   }
 
   button {
+    all: unset;
     width: 100px;
     height: 50px;
     border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: ${(props) => props.theme["--button-bg"]};
+
+    svg {
+      color: white;
+    }
   }
 `;

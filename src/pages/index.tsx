@@ -6,6 +6,8 @@ import {
   MainHeader,
 } from "./styles";
 
+import { MagnifyingGlass } from "phosphor-react";
+
 export function Home() {
   return (
     <MainHeader>
@@ -22,7 +24,9 @@ export function Home() {
 
         <DivSearch>
           <input type="text" placeholder="Buscar" />
-          <button></button>
+          <button>
+            <MagnifyingGlass size={30} />
+          </button>
         </DivSearch>
       </DivHeader>
     </MainHeader>
